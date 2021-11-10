@@ -1,0 +1,18 @@
+:root{
+--lightgreen: rgb(98, 180, 142);
+}
+
+
+
+.input {
+    background-color: var(--lightgreen);
+}
+
+input.input {
+    border: 2px solid rgb(161, 131, 131);
+}
+
+@font-face {
+    font-family: f;
+    src: url();
+}

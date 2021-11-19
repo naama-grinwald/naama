@@ -1,0 +1,52 @@
+* {
+    font-size: 40px;
+    text-align: center;
+}
+
+div div { /*all div which are child of div*/
+    border: 1px solid black;
+    height: 100%;
+}
+
+.GridContainer {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    'header header header header header'
+    'menu main main right right'
+    'menu main main right right'
+    'menu footer footer footer footer';
+}
+
+.item1 {
+    grid-area: header;
+}
+
+.item2 {
+    grid-area: menu;
+}
+
+.item3 {
+    grid-area: main;
+}
+
+.item4 {
+    grid-area: right;
+}
+
+.item5 {
+    grid-area: footer;
+}
+
+@media only screen and (max-width: 600px){
+    .GridContainer {
+        height: 100vh;
+        display: grid;
+        grid-template-areas: 
+        'header'
+        'menu'
+        'main'
+        'right'
+        'footer';
+    }
+}
